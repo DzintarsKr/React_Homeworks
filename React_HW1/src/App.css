@@ -1,0 +1,23 @@
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #fcfcfc;
+  color: #222;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 4px;
+}
