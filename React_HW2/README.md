@@ -14,9 +14,10 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
 Домашняя работа 2
-Задание 1
-Создание компонента Приветствия
+
+Задание 1 Создание компонента Приветствия
 1. Создайте новый проект React при помощи create-react-app.
 2. Подготовьте проект к работе.
 3. Создайте функциональный компонент с именем Greeting
