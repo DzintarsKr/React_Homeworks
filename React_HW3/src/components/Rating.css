@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Контейнер для всего блока рейтинга */
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для изображения рейтинга */
+.rating-image {
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Расположение группы кнопок */
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Стили для самих кнопок */
+.rating-button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Эффект при наведении курсора на кнопку */
+.rating-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
