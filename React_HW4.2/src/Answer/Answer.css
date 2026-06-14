@@ -1,0 +1,35 @@
+.answer-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.answer-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #dcdcdc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.answer-form input:focus {
+  border-color: #3498db;
+}
+
+.answer-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.answer-form button:hover {
+  background-color: #2980b9;
+}

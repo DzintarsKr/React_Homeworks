@@ -1,0 +1,24 @@
+.math-quiz {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #a8d8e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  font-family: "Segoe UI", sans-serif;
+}
+
+.score {
+  font-size: 2.2rem;
+  color: #0f0f0f;
+  margin-bottom: 20px;
+}
+
+.problem {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #22313f;
+  margin-bottom: 25px;
+  letter-spacing: 4px;
+}
