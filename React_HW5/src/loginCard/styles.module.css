@@ -1,0 +1,142 @@
+/* --- БАЗОВЫЕ СТИЛИ (ДЛЯ ПК И БОЛЬШИХ ЭКРАНОВ) --- */
+
+.pageContainer {
+  background-color: #0b0612;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 40px 20px;
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 40px;
+  display: block;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.title {
+  color: #1ed760;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #1ed760;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 30px 0;
+}
+
+/* Рамка-капсула */
+.socialContainer {
+  display: flex;
+  gap: 15px;
+  border: 2px solid #1ed760;
+  border-radius: 50px;
+  padding: 15px 35px;
+  align-items: center;
+}
+
+.socialButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стили для картинок-иконок */
+.iconImg {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  /* Плавный переход для анимации прыжка и смены цвета */
+  transition: filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 
+  ТОЧНЫЙ ХОВЕР:
+  1. hue-rotate(90deg) и brightness(0.8) делают иконку синей без свечения.
+  2. translateY(-6px) заставляет кнопку аккуратно подпрыгнуть вверх.
+*/
+.socialButton:hover .iconImg {
+  filter: hue-rotate(90deg) brightness(0.8);
+  transform: translateY(-6px);
+}
+
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ СМАРТФОНОВ (ЭКРАНЫ ДО 768px) --- */
+
+@media (max-width: 768px) {
+  .pageContainer {
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .logoWrapper {
+    position: static;
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 40px;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .socialContainer {
+    padding: 12px 25px;
+    gap: 12px;
+  }
+
+  .iconImg {
+    width: 44px;
+    height: 44px;
+  }
+}
+/* --- МЕДИА-ЗАПРОСЫ ДЛЯ СМАРТФОНОВ (ЭКРАНЫ ДО 360px) --- */
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 22px;
+  }
+  
+  .iconImg {
+    width: 40px;
+    height: 40px;
+  }
+}
