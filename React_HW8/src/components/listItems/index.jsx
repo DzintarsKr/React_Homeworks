@@ -5,9 +5,10 @@ function ListItems() {
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
 
+  // Исправлено: пустой массив [] означает, что хук сработает только при монтировании
   useEffect(() => {
-    console.log("Компонент ListItems обновлен");
-  }, [items]);
+    console.log("Компонент ListItems успешно смонтирован");
+  }, []); // Убрали items отсюда
 
   const addItem = () => {
     if (inputValue.trim() !== '') {
