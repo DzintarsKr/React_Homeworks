@@ -1,8 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import styles from './styles.module.css';
 
 function ListItems() {
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    console.log("Компонент ListItems обновлен");
+  }, [items]);
 
   const addItem = () => {
     if (inputValue.trim() !== '') {
@@ -12,29 +17,23 @@ function ListItems() {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-      <div style={{ display: 'flex', gap: '10px' }}>
+    <div className={styles.container}>
+      <div className={styles.inputGroup}>
         <input 
           type="text" 
           value={inputValue} 
           onChange={(e) => setInputValue(e.target.value)} 
           placeholder="Введите элемент..."
-          style={{ padding: '8px', fontSize: '14px' }}
+          className={styles.input}
         />
-        <button onClick={addItem} style={{ padding: '8px 15px', cursor: 'pointer' }}>
+        <button onClick={addItem} className={styles.button}>
           Добавить
         </button>
       </div>
       
-      <ul style={{ 
-        display: 'flex', 
-        flexDirection: 'column', 
-        gap: '8px', 
-        paddingLeft: '20px',
-        listStyleType: 'disc' 
-      }}>
+      <ul className={styles.list}>
         {items.map((item, index) => (
-          <li key={index} style={{ fontSize: '16px', color: '#333' }}>
+          <li key={index} className={styles.listItem}>
             {item}
           </li>
         ))}
