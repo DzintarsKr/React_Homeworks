@@ -1,12 +1,13 @@
-import './App.css'
+import ListItems from './components/listItems/index';
+import './App.css';
 
 function App() {
   return (
-    <>
-      
-         
-    </>
-  )
+    <div className="App">
+      <h1>Список элементов</h1>
+      <ListItems />
+    </div>
+  );
 }
 
-export default App
+export default App;
