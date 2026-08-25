@@ -1,0 +1,77 @@
+/* Базовые стили для контейнера приложения */
+.app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center; /* Выравнивание заголовков по центру */
+}
+
+.app-title {
+  color: #333333;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Оформление блока ввода текста */
+.input-group {
+  text-align: left; /* Текст лейбла выравниваем по левому краю */
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.text-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+/* Эффект при клике на текстовое поле */
+.text-input:focus {
+  border-color: #007bff;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid #eaeaea;
+  margin: 25px 0;
+}
+
+/* Стили для параграфов с результатами (внутри ValueDisplay) */
+.display-box {
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #f1f3f5;
+}
+
+.display-text {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #495057;
+}
+
+.current-highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.previous-highlight {
+  color: #28a745;
+  font-weight: bold;
+}
