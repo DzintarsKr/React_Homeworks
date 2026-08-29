@@ -1,0 +1,28 @@
+.userItem {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.userItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.userName {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.userEmail {
+  font-size: 14px;
+  color: #666666;
+}
