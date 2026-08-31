@@ -1,0 +1,11 @@
+.scoreContainer {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.scoreContainer h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
